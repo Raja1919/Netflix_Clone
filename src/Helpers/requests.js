@@ -1,6 +1,6 @@
 const API_KEY="005490d586c3c02bec0ae6d5a7087e15"
 
-export default{
+const endpoints={
     fetchTrending:`/trending/all/week?api_key=${API_KEY}&language=en-us`,
     fetchTopRated:`/movie/top_rated?api_key=${API_KEY}&language=en-us`,
     fetchActionMovies:`/discover/movie?api_key=${API_KEY}&with_genres=28`,
@@ -10,3 +10,4 @@ export default{
     fetchNetflixOriginals: `/discover/movie?api_key=${API_KEY}&with_genres=28`,
     fetchDocumentaries:`/discover/movie?api_key=${API_KEY}&with_genres=99`
 }
+export default endpoints
